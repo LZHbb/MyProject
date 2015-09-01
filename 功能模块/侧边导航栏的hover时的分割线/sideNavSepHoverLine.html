@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../../base.css">
+	<style type="text/css">
+		body{padding:200px;}
+		.allsort{width:200px;border:1px solid #aaa;}
+		.allsort .item{height:38px;border-top:1px solid #ccc;width:180px; margin-left:10px; position: relative;}
+		.allsort .first{margin-top:-1px;border-top-color:#aaa;}
+		.allsort .item.hover{margin-left:0;}
+		.allsort .item.hover h3{width:201px;background-color: #fff;margin-left:0;border-top:1px solid #ccc;height:38px;border-bottom:1px solid #ccc; margin-top:-1px;}
+	</style>
+</head>
+<body>
+	<div class="allsort">
+		<div class="item first"><h3></h3></div>
+		<div class="item"><h3></h3></div>
+		<div class="item"><h3></h3></div>
+		<div class="item"><h3></h3></div>
+		<div class="item"><h3></h3></div>
+	</div>
+	<script type="text/javascript" src="../../jquery.min.js"></script>
+	<script type="text/javascript">
+	$(".allsort .item").hover(function(){
+		$(this).toggleClass('hover');
+	})
+	</script>
+</body>
+</html>

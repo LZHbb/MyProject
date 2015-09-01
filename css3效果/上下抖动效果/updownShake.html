@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>上下抖动效果</title>
+	<style type="text/css">
+		@keyframes updownshake{
+			0%{
+				transform:translateY(0);
+			}
+			50%{
+				transform:translateY(5px);
+			}
+			100%{
+				transform:translateY(0);
+			}
+		}
+		img{animation:updownshake 1.5s ease 2s infinite; position: fixed;}
+	</style>
+</head>
+<body>
+	<img src="images/float_right.png" height="261" width="300">
+</body>
+</html>

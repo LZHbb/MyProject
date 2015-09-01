@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页顶部广告高度伸缩</title>
+	<link rel="stylesheet" type="text/css" href="../../base.css">
+	<style type="text/css">
+		.top_index {
+			height: 0;
+			min-width: 990px;
+			overflow: hidden
+		}
+
+		.top_index
+		.top_index_ad {
+			display: block;
+			height: 60px;
+			background-position: top center;
+			background-repeat: no-repeat
+		}
+
+		.top_index
+		.top_index_close {
+			left: 50%;
+			margin-left: 470px;
+			background: url("images/icon_close.png") 0 0 no-repeat;
+			display: inline-block;
+			position: absolute;
+			width: 18px;
+			height: 18px;
+			top: 10px;
+			right: 10px;
+			z-index: 1
+		}
+
+		.index1200 .top_index
+		.top_index_close {
+			margin-left: 570px
+		}
+
+	</style>
+</head>
+<body class="index1200">
+	<div class="top_index" id="topIndex">
+		<i class="top_index_close"></i>
+		<a class="top_index_ad" href="http://www.tuniu.com/zt/national_day/guowai/" data-bgsrc="images/gqgw831.jpg?bgcolor=#0081ea" target="_blank" onclick="_gaq.push(['_trackEvent', 'home_bj','banner','1']);"></a>
+	</div>
+	<script type="text/javascript" src="../../jquery.min.js"></script>
+	<script type="text/javascript" src="pageWidthScale.js"></script>
+</body>
+</html>

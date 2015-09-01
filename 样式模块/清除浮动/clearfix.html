@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{padding:0; margin:0;}
+		.clearfix:after {
+			content: '.';
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden
+		}
+
+		.clearfix {
+			zoom:1;
+		}
+
+		*html
+		.clearfix {
+			height: 1%;
+		}
+		
+		.top_nav{margin:100px;background-color: #f8f8f8;border-bottom:1px solid #eee;}
+		.left{float:left;display: inline;}
+		.right{float:right;display: inline;}
+	</style>
+</head>
+<body>
+	<div class="top_nav clearfix"><div class="left">左边</div><div class="right">右边</div></div>
+</body>
+</html>
