@@ -60,3 +60,7 @@ table {
     border-spacing: 0
 }
 
+body{
+    font-size:14px;
+    font-family:"Microsoft Yahei";
+}
