@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../../base.css">
+	<style type="text/css">
+		body{padding:200px;}
+		.skillbar{width:200px;height:7px;background-color: #999;position:relative;}
+		.skillbar-bar{position: absolute;height:7px;top:0;left:0;z-index: 10;background-color: #fc6969;}
+
+	</style>
+</head>
+<body>
+	<div class="skillbar" data-percent="84%">
+
+		<div class="skillbar-bar"></div>
+	</div>	
+	<script type="text/javascript" src="../../jquery.min.js"></script>
+	<script type="text/javascript">
+		$('.skillbar').each(function(){
+			$(this).find('.skillbar-bar').animate({
+				width:$(this).attr('data-percent')
+			},3000);
+		});
+
+
+	</script>
+</body>
+</html>

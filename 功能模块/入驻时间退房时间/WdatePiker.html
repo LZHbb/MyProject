@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>日历控件</title>
+	<style type="text/css">
+		*{padding:0; margin:0;}
+		body{padding:200px;}
+		#d11{margin-right:100px;}
+		input{width:200px;height:28px;;line-height: 28px; outline: none;border:1px solid #e1e1e1;}
+	</style>
+	<script type="text/javascript"  src="datePicker/WdatePicker.js"></script>
+
+</head>
+<body>
+	入驻时间：<input id="d11" onClick="datePicker()"/>退房时间：<input id="d12" onClick="datePicker()"/>
+	<script type="text/javascript">
+		function datePicker(){
+			WdatePicker({
+				minDate:'%y-%M-{%d}',
+				isShowClear: true,
+				readOnly: true,
+				isShowToday:false,
+				isShowOK:false,
+				doubleCalendar:true,
+				onpicking:function(dp){
+					alert(dp.cal.getDateStr()+"----"+dp.cal.getNewDateStr() )
+				}
+			});
+		}
+	</script>
+
+</body>
+</html>
